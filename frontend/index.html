@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTubeKR Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="lado-izquierdo">
+        <a class="boton-menu" href="#menu">
+          <img class="imagen-menu" src="assets/img/hamburguesa.png" alt="Menú" />
+        </a>
+        <a class="enlace-logo" href="index.html">
+          <img class="logo-youtube" src="assets/img/Youtube_logo.png" alt="YouTubeKR" />
+        </a>
+      </div>
+      <div id="buscador">
+        <input class="campo-buscar" type="text" placeholder="Buscar" />
+      </div>
+    </header>
+
+    <div class="pagina">
+      <nav id="menu" class="menu-lateral">
+        <ul class="lista-menu">
+          <li class="opcion-menu">
+            <a class="enlace-menu" href="index.html">Principal</a>
+          </li>
+        </ul>
+        <hr class="linea-menu" />
+        <p class="titulo-suscripciones">Suscripciones</p>
+        <ul class="lista-menu">
+          <li class="opcion-menu">IlloJuan</li>
+          <li class="opcion-menu">Auronplay</li>
+          <li class="opcion-menu">ElRubiusOMG</li>
+        </ul>
+      </nav>
+
+      <main class="contenido-principal">
+        <h1 class="titulo-principal">Videos recomendados</h1>
+        <section id="galeria" class="videos"></section>
+      </main>
+    </div>
+
+    <footer class="pie-pagina">Youtube programacion web.</footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
+
+
+

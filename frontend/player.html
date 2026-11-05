@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTubeKR Reproductor</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="lado-izquierdo">
+        <a class="enlace-logo" href="index.html">
+          <img class="logo-youtube" src="assets/img/Youtube_logo.png" alt="YouTubeKR" />
+        </a>
+      </div>
+    </header>
+
+    <main class="pagina-reproduccion">
+      <section class="reproductor">
+        <video id="video-principal" class="video-principal" controls>
+          Tu navegador no puede reproducir este video.
+        </video>
+        <h1 id="titulo-video" class="titulo-video-principal"></h1>
+        <div class="datos-video">
+          <strong id="canal-video"></strong>
+          <p id="descripcion-video" class="descripcion-video"></p>
+        </div>
+
+        <section class="comentarios">
+          <h2 id="titulo-comentarios" class="titulo-comentarios">Comentarios</h2>
+          <form id="form-comentario" class="form-comentario">
+            <input
+              id="autor"
+              class="campo-comentario"
+              type="text"
+              placeholder="Tu nombre"
+              maxlength="40"
+              required
+            />
+            <textarea
+              id="texto"
+              class="campo-comentario"
+              placeholder="Escribe un comentario"
+              maxlength="500"
+              rows="3"
+              required
+            ></textarea>
+            <button class="boton-comentar" type="submit">Comentar</button>
+          </form>
+          <div id="lista-comentarios"></div>
+        </section>
+      </section>
+
+      <aside class="lista">
+        <h2 class="titulo-lista">Recomendados</h2>
+        <div id="lista-recomendados"></div>
+      </aside>
+    </main>
+
+    <footer class="pie-pagina">Youtube programacion web.</footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/player.js"></script>
+  </body>
+</html>
